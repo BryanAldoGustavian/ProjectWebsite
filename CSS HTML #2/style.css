@@ -1,0 +1,96 @@
+
+            * {
+            box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                height: 100%;
+            }
+
+            #header {
+                background-color:#ecbd76;
+                text-align: center;
+                width: max-width;
+                margin: 5px;
+                font-size: 10px;
+                padding: 5px;
+                border-radius: 12px;
+                height: 10%;
+            }
+
+            #button {
+                display: inline-block;
+                height: 70px;
+                width: 180px;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                background-color: #ecbd76;
+                border-radius: 12px;
+                position: absolute;
+                right: 5%;
+                bottom: 20%;
+                outline: none;
+                border: none;
+                box-shadow: 0 9px #999;
+            }
+
+            #button:active{
+                background-color: #997a38;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+            #row::after {
+                content: "";
+                display: table;
+                clear: both;
+                height: 70%;
+            }
+
+            #leftcoloumn {
+                margin-top: 5px;
+                float: left;
+                width: 30%;
+            }
+
+            #rightcoloumn {
+                margin-top: 5px;
+                float: right;
+                width: 70%;
+            }
+           
+            #content {
+                background-color: rgb(255, 255, 135);
+                padding: 20px;
+                margin-right: 5px;
+                margin-left: 5px;
+                border-radius: 12px;
+                padding: 10px;
+                padding-bottom: 60px;
+                margin-bottom: 5px;
+                height: 480px;
+            }
+
+            #footer{
+                width: max-width;
+                height: 10%;
+                background-color: #ecbd76;
+                text-align: center;
+                padding: 5px;
+                font-size: 10px;
+                margin: 5px;
+                border-radius: 12px;
+
+            }
+
+            @media screen and (max-width:600px){
+                #leftcoloumn, #rightcoloumn {
+                    width : 100%;
+                    padding: 0;
+                }
+            }
+
+            
+       
